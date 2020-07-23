@@ -1,0 +1,11 @@
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'https://languagedetection.apifex.com/api/v1/detect', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
+        alert(JSON.parse(this.responseText).main_language_name);
+    };
+    xhr.send(JSON.stringify({
+        text: 'Emk hraðkvæðr hilmi at mæra, en glapmáll of gløggvinga, opinspjallrof jǫfurs dôðum, en þagmælskr of þjóðlygi.'
+    }));
+</script>
