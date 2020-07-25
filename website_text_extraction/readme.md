@@ -5,7 +5,7 @@ API endpoint: https://websitetextextraction.apifex.com/api/v1/extract (can be us
 
 ## Online Interface
 
-[Click here to visit API, then click 'Try it out'](https://phonenumbervalidation.apifex.com/#/API%20methods/validate_phonenumber_get_api_v1_validate_get)
+[Click here to visit API, then click 'Try it out'](https://websitetextextraction.apifex.com/#/API%20methods/extract_text_get_api_v1_extract_get)
 
 ## Example
 
