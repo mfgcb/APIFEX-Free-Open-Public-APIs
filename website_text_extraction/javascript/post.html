@@ -1,0 +1,9 @@
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'https://websitetextextraction.apifex.com/api/v1/extract', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
+        alert('Extracted text length: ' + JSON.parse(this.responseText).extracted_text_length);
+    };
+    xhr.send(JSON.stringify({ 'url': 'https://home.cern/news/news/physics/neutron-stars-show-their-cores' }));
+</script>
