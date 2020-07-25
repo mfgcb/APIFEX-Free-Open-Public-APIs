@@ -1,3 +1,6 @@
+#-*- coding:utf-8 -*-
+
+# requires requests package --> pip install requests
 import requests
 
 payload = {'text': 'Emk hraðkvæðr hilmi at mæra, en glapmáll of gløggvinga, opinspjallrof jǫfurs dôðum, en þagmælskr of þjóðlygi.'}
