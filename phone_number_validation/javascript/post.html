@@ -1,0 +1,9 @@
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'https://phonenumbervalidation.apifex.com/api/v1/validate', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
+        alert('Is valid number: ' + JSON.parse(this.responseText).is_valid_number);
+    };
+    xhr.send(JSON.stringify({ phonenumber: '+1 650-253-0000' }));
+</script>

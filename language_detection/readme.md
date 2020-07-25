@@ -3,6 +3,10 @@ APIFEX language detection is a fully featured open public API for converting pie
 
 API endpoint: https://languagedetection.apifex.com/api/v1/detect (can be used for GET and POST requests)  
 
+## Online Interface
+
+[Click here to visit API, then click 'Try it out'](https://languagedetection.apifex.com/#/API%20methods/detect_language_get_api_v1_detect_get)
+
 ## Example
 
 `curl -X GET "https://languagedetection.apifex.com/api/v1/detect?text=Emk%20hra%C3%B0kv%C3%A6%C3%B0r%20hilmi%20at%20m%C3%A6ra%2C%20en%20glapm%C3%A1ll%20of%20gl%C3%B8ggvinga%2C%20opinspjallrof%20j%C7%ABfurs%20d%C3%B4%C3%B0um%2C%20en%20%C3%BEagm%C3%A6lskr%20of%20%C3%BEj%C3%B3%C3%B0lygi." -H  "accept: application/json"`
@@ -33,16 +37,6 @@ The language detection API will correctly recognize this text as being written i
 ```
 
 [Try in browser with GET request](https://languagedetection.apifex.com/api/v1/detect?text=Emk%20hra%C3%B0kv%C3%A6%C3%B0r%20hilmi%20at%20m%C3%A6ra%2C%20en%20glapm%C3%A1ll%20of%20gl%C3%B8ggvinga%2C%20opinspjallrof%20j%C7%ABfurs%20d%C3%B4%C3%B0um%2C%20en%20%C3%BEagm%C3%A6lskr%20of%20%C3%BEj%C3%B3%C3%B0lygi.)
-
-
-## Code snippets
-
-APIFEX language detection features both GET and POST endpoints.  
-
-The GET endpoint expects the text as a URL parameter named text.  .../v1/detect?text=sometext  
-The POST endpoint expects the text variable as a key / value pair in a JSON request body: {"text": "sometext"}  
-
-Direct requests to the endpoint without using a library require the text to be urlencoded, see curl example.  
 
 ## Limits
 
