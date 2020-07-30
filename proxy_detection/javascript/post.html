@@ -1,0 +1,10 @@
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'https://proxydetection.apifex.com/api/v1/detect', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
+        var data = JSON.parse(this.responseText);
+        alert( 'The address ' + data.address + ' is a proxy: ' + data.is_proxy);
+    };
+    xhr.send(JSON.stringify({}));
+</script>
